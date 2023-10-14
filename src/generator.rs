@@ -6,7 +6,7 @@ pub struct SubnetGenerator;
 impl SubnetGenerator {
     pub fn generate_subnets(
         base_address: Ipv4Addr,
-        max_mask: Ipv4Addr,
+        _base_mask: Ipv4Addr,
         host_required: Vec<u32>,
     ) -> Vec<Subnet> {
         println!("SubnetGenerator::generate_subnets");
